@@ -10,7 +10,7 @@ import UIKit
 
 class TitleLabel: UILabel, CustomStyle {
 
-    private struct Default {
+    private struct DefaultStyle {
         static let text = "제이미의 사진액자 🖼"
         static let textColor = UIColor.black
         static let shadowColor = UIColor.lightGray
@@ -23,11 +23,11 @@ class TitleLabel: UILabel, CustomStyle {
     }
 
     func setDefaultStyle() {
-        self.text = Default.text
-        self.textColor = Default.textColor
-        self.shadowColor = Default.shadowColor
-        self.shadowOffset = Default.shadowOffset
-        self.attributedText = NSAttributedString(string: self.text ?? String(), attributes: Default.attributes)
+        self.text = DefaultStyle.text
+        self.textColor = DefaultStyle.textColor
+        self.shadowColor = DefaultStyle.shadowColor
+        self.shadowOffset = DefaultStyle.shadowOffset
+        self.attributedText = NSAttributedString(string: self.text ?? String(), attributes: DefaultStyle.attributes)
     }
 
 }
